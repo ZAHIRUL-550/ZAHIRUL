@@ -2,7 +2,7 @@
 #FUCK_YOU
 import requests,bs4,json,os,sys,random,datetime,time,re
 #import urllib3,rich,base64
-from rich.table import Table as me
+#from rich.table import Table as me
 from rich.console import Console as sol
 from bs4 import BeautifulSoup as sop
 from concurrent.futures import ThreadPoolExecutor as tred
